@@ -3,6 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <title>Norman to GOMS to KLM</title>
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+    }
+
+    header, footer {
+      background-color: #800000;
+      color: #ffffff;
+    }
+
+    h1 { font-size: 2em; }
+    h2 { color: #800000; }
+    h3 { color: #cc9900; }
+
+    nav { background-color: #f0f0f0; }
+    
+    a { text-decoration: none; color: #800000; font-weight: bold; }
+    footer a { color: #ffffff; }
+
+    ul, ol { background-color: #fafafa; }
+    strong { color: #800000; }
+
+    .calculation-box {
+      background-color: #fff8e1;
+      font-family: monospace;
+      font-size: 1.2em;
+    }
+  </style>
 </head>
 <body>
 
@@ -18,7 +48,7 @@
       <li><a href="contact.html">Contact</a></li>
       <li><a href="analysis.html">Interaction Analysis</a></li>
       <li><a href="norman2klm.html" aria-current="page">Norman–GOMS–KLM</a></li>
-      <li><a href="assignment01.html">Lab 01 Rules</a></li>
+      <li><a href="assignment01.html">Assignment 01</a></li>
     </ul>
   </nav>
 
@@ -29,7 +59,7 @@
         KLM is a low-level instance of GOMS. While Norman focuses on <em>why</em> a user does something, 
         KLM predicts <em>how long</em> it takes for an expert user to execute it.
       </p>
-      
+
       
 
       <h3>The Seven Primitive Operators</h3>
@@ -60,13 +90,15 @@
         <li>Type the missing 'i' (<strong>K</strong>)</li>
       </ol>
 
-      <p><strong>Predicted Operator Sequence:</strong> H → P → B → H → M → K</p>
+      <div class="calculation-box">
+        Predicted Sequence: H → P → B → H → M → K
+      </div>
     </section>
 
     <section>
       <h2>Critical Summary</h2>
+      <h3>Why does KLM only have 7 operators?</h3>
       <p>
-        <strong>Why does KLM only have 7 operators?</strong><br>
         Unlike Norman’s Action Cycle, KLM does not model the <strong>Gulf of Evaluation</strong>. 
         It assumes the user already knows the interface perfectly (expert) and makes no mistakes. 
         Therefore, it ignores the time spent perceiving or interpreting the screen, focusing 
@@ -77,7 +109,10 @@
 
   <footer>
     <p>&copy; 2026 HCI Course Work</p>
-    <p><a href="index.html">Back to Home</a></p>
+    <p>
+      <a href="index.html">Back to Home</a> | 
+      <a href="cv.html">View CV</a>
+    </p>
   </footer>
 
 </body>
