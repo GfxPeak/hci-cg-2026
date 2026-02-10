@@ -2,13 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Don Norman – Home</title>
+  <title>HCI – Interaction Models</title>
+  <style>
+    /* STRICT LAB 01 CSS: Color & Font ONLY */
+    body {
+      font-family: Verdana, sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+    }
+    
+    header, footer {
+      background-color: #800000;
+      color: #ffffff;
+    }
+
+    h1 { font-size: 2em; }
+    h2 { color: #800000; }
+    h3 { color: #cc9900; }
+
+    nav { background-color: #f0f0f0; }
+    
+    a { 
+      text-decoration: none; 
+      color: #800000; 
+      font-weight: bold; 
+    }
+    
+    /* Footer links need to be white to be visible on maroon */
+    footer a { color: #ffffff; }
+
+    article { background-color: #fafafa; }
+  </style>
 </head>
 <body>
 
   <header>
-    <h1>Don Norman</h1>
-    <p>Human–Computer Interaction Philosopher</p>
+    <h1>HCI: Human–Computer Interaction</h1>
+    <p>From Cognitive Psychology to Performance Prediction</p>
   </header>
 
   <nav aria-label="Primary navigation">
@@ -18,7 +48,7 @@
       <li><a href="contact.html">Contact</a></li>
       <li><a href="analysis.html">Interaction Analysis</a></li>
       <li><a href="norman2klm.html">Norman–GOMS–KLM</a></li>
-      <li><a href="assignment01.html">Lab 01 Rules</a></li>
+      <li><a href="assignment01.html">Assignment 01</a></li>
     </ul>
   </nav>
 
@@ -32,34 +62,49 @@
     </section>
 
     <section>
-      <h2>Biography</h2>
+      <h2>Theoretical Framework (Dix et al.)</h2>
       <p>
-        Don Norman is a pioneer in the field of Human–Computer Interaction [cite: 98], known for his work on user-centered design, usability, and cognitive engineering[cite: 99].
+        Human-Computer Interaction relies on models to understand the gap between human goals and system states. We study this hierarchy in three distinct levels:
       </p>
+
+      
+
+      <article>
+        <h3>1. The Descriptive Level: Norman’s Gulfs</h3>
+        <p>
+          Before a user can click a button, they must understand what the button does. 
+          <strong>Norman’s Action Cycle (Chapter 3)</strong> is primarily concerned with the 
+          <em>Gulf of Execution</em> (figuring out how to use the system) and the 
+          <em>Gulf of Evaluation</em> (understanding what the system did).
+        </p>
+      </article>
+
+      <article>
+        <h3>2. The Analytic Level: GOMS</h3>
+        <p>
+          Once a user crosses the gulfs and becomes an expert, they stop "problem-solving" and start 
+          "executing." <strong>GOMS (Chapter 12)</strong> models this <em>procedural knowledge</em>. 
+          It assumes the user knows exactly what to do and focuses on the logical structure 
+          (Methods and Selection Rules) of the task.
+        </p>
+      </article>
+
+      <article>
+        <h3>3. The Predictive Level: KLM</h3>
+        <p>
+          At the lowest level, interaction is purely physical. The <strong>Keystroke-Level Model</strong> 
+          strips away the "meaning" of the task and calculates the raw execution time based on 
+          motor operators (Keystroking, Pointing, Homing).
+        </p>
+      </article>
     </section>
 
     <section>
-      <h2>Course Content & Importance</h2>
+      <h2>Why We Need All Three</h2>
       <p>
-        This site is based on <strong>Dix et al., Human–Computer Interaction</strong> (Chapters 9 and 12)[cite: 32, 42]. These chapters cover evaluation techniques and cognitive models that are fundamental to understanding how humans interact with technology.
-      </p>
-
-      <h3>Key Topics</h3>
-      <ul>
-        <li>
-          <strong>Norman’s Action Cycle:</strong> Explains the psychology of interaction through seven stages, focusing on the "Gulfs" of Execution and Evaluation[cite: 42].
-        </li>
-        <li>
-          <strong>GOMS Framework:</strong> A predictive model that analyzes the Goals, Operators, Methods, and Selection rules an expert uses to perform tasks[cite: 42].
-        </li>
-        <li>
-          <strong>Keystroke-Level Model (KLM):</strong> A quantitative tool consisting of seven primitive operators (K, B, P, H, D, M, R) used to predict execution time for error-free interaction[cite: 123, 147].
-        </li>
-      </ul>
-
-      <h3>Importance</h3>
-      <p>
-        Studying these models is critical because they allow designers to predict user performance and identify usability errors before a system is even built[cite: 108, 109]. While Norman helps us understand <em>why</em> errors happen, GOMS and KLM allow us to measure <em>how efficiently</em> a task can be completed[cite: 108, 132, 133].
+        A system can score well in KLM (fast to click) but fail in Norman’s Cycle (confusing to understand). 
+        Therefore, a complete HCI analysis requires checking both the <strong>cognitive load</strong> (Norman) 
+        and the <strong>physical efficiency</strong> (KLM).
       </p>
     </section>
   </main>
@@ -69,7 +114,7 @@
     <p>
       <a href="assignment01.html">Lab 01 Instructions</a> |
       <a href="https://github.com/humeraaa/hci-cg-2026">Starter Code</a> |
-      <a href="https://humeraaa.github.io/hci-cg-2026/">Live Demo</a> [cite: 101]
+      <a href="https://humeraaa.github.io/hci-cg-2026/">Live Demo</a>
     </p>
   </footer>
 
