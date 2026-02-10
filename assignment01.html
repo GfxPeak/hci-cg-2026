@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab Assignment 01 – Semantic HTML Foundations</title>
+  <style>
+    /* Minimal styling allowed in Lab 01 */
+    body { font-family: Arial, sans-serif; }
+    .rule-box { background-color: #fff3cd; }
+    .note-box { background-color: #e7f3ff; }
+    .warning  { color: #7a1f1f; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lab Practice &amp; Assignment 01</h1>
+    <p>
+      Semantic HTML foundations using Norman, GOMS, and KLM 
+      (<strong>Dix et al., Human–Computer Interaction</strong>, Ch. 12 and Ch. 9)
+    </p>
+  </header>
+
+  <nav aria-label="Primary navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="analysis.html">Interaction Analysis</a></li>
+      <li><a href="norman2klm.html">Norman–GOMS–KLM</a></li>
+      <li><a href="assignment01.html" aria-current="page">Lab 01 Rules</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="rule-box">
+      <h2>Project Purpose &amp; Rules</h2>
+      <p>
+        The goal is to demonstrate <strong>semantic HTML</strong> skills with <strong>minimal CSS</strong> and <strong>no JavaScript</strong>[cite: 27, 28].
+      </p>
+      <ul>
+        <li><strong>Strict CSS:</strong> Only <code>color</code>, <code>background-color</code>, <code>font-family</code>, and <code>font-size</code> are allowed[cite: 52, 167].</li>
+        <li><strong>No Layout:</strong> Properties like <code>margin</code>, <code>padding</code>, or <code>flex</code> are strictly forbidden.</li>
+        <li><strong>Content:</strong> Must only use material from Chapters 9 and 12 of Dix et al[cite: 33].</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>HTML Requirements</h2>
+      <table border="1">
+        <caption>Semantic HTML and Accessibility Rules</caption>
+        <thead>
+          <tr>
+            <th scope="col">Area</th>
+            <th scope="col">Rule</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Structure</th>
+            <td>Use <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code>[cite: 36, 144].</td>
+          </tr>
+          <tr>
+            <th scope="row">Navigation</th>
+            <td>Must be an unordered list (<code>&lt;ul&gt;</code>) inside a <code>&lt;nav&gt;</code>[cite: 38].</td>
+          </tr>
+          <tr>
+            <th scope="row">Accessibility</th>
+            <td>Use <code>aria-current="page"</code> on the active link and <code>alt</code> text on all images[cite: 49, 166].</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="note-box">
+      <h2>Lab Exam Practice</h2>
+      <h3>Part A: Fix the Mistakes</h3>
+      <p>Identify common errors like skipping heading levels (e.g., <code>&lt;h1&gt;</code> to <code>&lt;h3&gt;</code>) or missing <code>&lt;li&gt;</code> tags in menus[cite: 42, 57, 175].</p>
+      
+      <h3>Part B: True/False</h3>
+      <ul>
+        <li><strong>T/F:</strong> KLM predicts execution time for expert performance. (True) [cite: 79, 187]</li>
+        <li><strong>T/F:</strong> A page can have multiple <code>&lt;h1&gt;</code> tags. (False) [cite: 40, 151]</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 HCI–CG Course Work</p>
+  </footer>
+
+</body>
+</html>

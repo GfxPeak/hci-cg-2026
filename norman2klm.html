@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Norman to GOMS to KLM</title>
+</head>
+<body>
+
+  <header>
+    <h1>From Norman to GOMS to KLM</h1>
+    <p>Mapping high-level psychology to execution-level performance (Dix et al., Ch. 12).</p>
+  </header>
+
+  <nav aria-label="Primary navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="analysis.html">Interaction Analysis</a></li>
+      <li><a href="norman2klm.html" aria-current="page">Norman–GOMS–KLM</a></li>
+      <li><a href="assignment01.html">Lab 01 Rules</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>The Keystroke-Level Model (KLM)</h2>
+      <p>
+        KLM is a low-level instance of GOMS. While Norman focuses on <em>why</em> a user does something, 
+        KLM predicts <em>how long</em> it takes for an expert user to execute it.
+      </p>
+      
+      
+
+      <h3>The Seven Primitive Operators</h3>
+      <ul>
+        <li><strong>K (Keystroke):</strong> Pressing a key on the keyboard.</li>
+        <li><strong>B (Button):</strong> Pressing or releasing a mouse button.</li>
+        <li><strong>P (Pointing):</strong> Moving the mouse to a target on the screen.</li>
+        <li><strong>H (Homing):</strong> Moving hands between keyboard and mouse.</li>
+        <li><strong>D (Drawing):</strong> Drawing straight line segments.</li>
+        <li><strong>M (Mental):</strong> Mental preparation or decision making.</li>
+        <li><strong>R (Response):</strong> System response time (waiting for the computer).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Task Analysis: Correcting a Payer Name</h2>
+      <p>
+        Building on the <strong>"Who Paid"</strong> problem, imagine an expert user realizes they 
+        typed "Alce" instead of "Alice" and must correct it:
+      </p>
+
+      <ol>
+        <li>Move hand to mouse (<strong>H</strong>)</li>
+        <li>Position cursor after the 'l' (<strong>P</strong>)</li>
+        <li>Click to set insertion point (<strong>B</strong>)</li>
+        <li>Return hand to keyboard (<strong>H</strong>)</li>
+        <li>Mental pause to confirm position (<strong>M</strong>)</li>
+        <li>Type the missing 'i' (<strong>K</strong>)</li>
+      </ol>
+
+      <p><strong>Predicted Operator Sequence:</strong> H → P → B → H → M → K</p>
+    </section>
+
+    <section>
+      <h2>Critical Summary</h2>
+      <p>
+        <strong>Why does KLM only have 7 operators?</strong><br>
+        Unlike Norman’s Action Cycle, KLM does not model the <strong>Gulf of Evaluation</strong>. 
+        It assumes the user already knows the interface perfectly (expert) and makes no mistakes. 
+        Therefore, it ignores the time spent perceiving or interpreting the screen, focusing 
+        strictly on physical execution and necessary mental pauses.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 HCI Course Work</p>
+    <p><a href="index.html">Back to Home</a></p>
+  </footer>
+
+</body>
+</html>

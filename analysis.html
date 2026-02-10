@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Interaction Analysis – The "Who Paid" Problem</title>
+
+  <style>
+    /* Minimal styling: highlight rows where Norman and GOMS directly correspond */
+    .norman-goms-match {
+      background-color: #fff3cd; /* subtle amber */
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Interaction Analysis</h1>
+    <p>Norman (1988) vs. GOMS (1983): The "Who Paid" Problem [cite: 32]</p>
+  </header>
+
+  <nav aria-label="Primary navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="analysis.html" aria-current="page">Interaction Analysis</a></li>
+      <li><a href="norman2klm.html">Norman–GOMS–KLM</a></li>
+      <li><a href="assignment01.html">Lab 01 Rules</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Norman vs. GOMS Comparison Table</h2>
+
+      
+
+      <table border="1">
+        <caption>
+          Comparison of Norman’s stages and GOMS concepts using the "Who Paid" expense tracking example [cite: 4, 40]
+        </caption>
+
+        <thead>
+          <tr>
+            <th scope="col">Norman’s Stage</th>
+            <th scope="col">Real-World Example (Shared Expense App)</th>
+            <th scope="col">GOMS Interpretation &amp; Rationale [cite: 5]</th>
+            <th scope="col">Alignment Analysis</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class="norman-goms-match">
+            <th scope="row">Goal ↔ GOAL [cite: 6]</th>
+            <td>"I need to know which friend paid the restaurant bill." [cite: 7]</td>
+            <td>
+              ✅ <strong>Goal:</strong> Identify-Payer. [cite: 8]<br>
+              This is the top-level objective in GOMS.
+            </td>
+            <td>
+              ✅ <strong>Perfect Match</strong> [cite: 9]<br>
+              Direct correspondence between models.
+            </td>
+          </tr>
+
+          <tr class="norman-goms-match">
+            <th scope="row">Plan ↔ METHOD [cite: 10]</th>
+            <td>
+              Decision: "I will open the activity log to check the name." [cite: 11]
+            </td>
+            <td>
+              ✅ <strong>Method:</strong> Check-Activity-Log. [cite: 13]<br>
+              A sequence of steps to retrieve the information.
+            </td>
+            <td>
+              ✅ <strong>Conceptual Match</strong> [cite: 15]<br>
+              Norman’s “Plan” is realized as the GOMS “Method.”
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">Specify</th>
+            <td>
+              User looks for the "Activity" or "History" tab icon. [cite: 17]
+            </td>
+            <td>
+              <strong>Not Explicitly Modeled.</strong> [cite: 19]<br>
+              GOMS assumes the user already knows where the button is. [cite: 19]
+            </td>
+            <td>
+              <strong>Key Divergence</strong> [cite: 21]<br>
+              Norman explains the cognitive search; GOMS abstracts it away. [cite: 21]
+            </td>
+          </tr>
+
+          <tr class="norman-goms-match">
+            <th scope="row">Execute ↔ OPERATOR [cite: 22]</th>
+            <td>Physical Action: Tapping the "Activity" tab on the screen. [cite: 22]</td>
+            <td>
+              <strong>Operator:</strong> Tap (primitive motor action). [cite: 23]<br>
+              <strong>KLM:</strong> [M][P][K] (Mental prep, point, and tap). [cite: 23]
+            </td>
+            <td>
+              ✅ <strong>Direct Match</strong> [cite: 24]<br>
+              Both models acknowledge the physical execution.
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">Perceive / Interpret / Evaluate [cite: 25]</th>
+            <td>
+              Feedback: User sees "Paid by Alice" and confirms the task is done. [cite: 26]
+            </td>
+            <td>
+              <strong>Not Modeled in GOMS.</strong> [cite: 27]<br>
+              GOMS assumes perfect, instant interpretation. [cite: 27]
+            </td>
+            <td>
+              <strong>Fundamental Divergence</strong> [cite: 28]<br>
+              This is the "Gulf of Evaluation" outside GOMS scope. [cite: 28]
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Summary of the "Who Paid" Problem</h2>
+      <p>
+        This interaction highlights how the <strong>Gulf of Evaluation</strong> can occur if an app is poorly designed. 
+        While GOMS models the expert speed of finding the payer, Norman's model explains why a user might 
+        struggle if the interface does not clearly signal who paid versus who owes[cite: 28, 29].
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="index.html">Back to Home</a> [cite: 92]</p>
+  </footer>
+
+</body>
+</html>
