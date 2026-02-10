@@ -2,25 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Contact – Interaction Models</title>
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+    }
 
-  <title>Don Norman – Contact</title>
+    header, footer {
+      background-color: #800000;
+      color: #ffffff;
+    }
+
+    h1 { font-size: 2em; }
+    
+    nav { background-color: #f0f0f0; }
+    
+    a { text-decoration: none; color: #800000; font-weight: bold; }
+    footer a { color: #ffffff; }
+
+    fieldset { background-color: #fafafa; }
+    legend { font-weight: bold; color: #800000; }
+    label { font-weight: bold; color: #333333; }
+
+    button {
+      background-color: #800000;
+      color: #ffffff;
+      font-size: 1em;
+    }
+  </style>
 </head>
 <body>
 
   <header>
     <h1>Contact</h1>
+    <p>Reach out regarding HCI Frameworks & Analysis</p>
   </header>
 
   <nav aria-label="Primary navigation">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="cv.html">CV</a></li>
-
       <li><a href="contact.html" aria-current="page">Contact</a></li>
-
       <li><a href="analysis.html">Interaction Analysis</a></li>
       <li><a href="norman2klm.html">Norman–GOMS–KLM</a></li>
-      <li><a href="assignment01.html">Lab 01 Rules</a></li>
+      <li><a href="assignment01.html">Assignment 01</a></li>
     </ul>
   </nav>
 
@@ -30,18 +57,22 @@
         <legend>Send a Message</legend>
 
         <label for="subject">Subject</label><br>
-        <input type="text" id="subject" name="subject"><br><br>
+        <input type="text" id="subject" name="subject" placeholder="e.g., Question about GOMS"><br>
 
         <label for="message">Message</label><br>
-        <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+        <textarea id="message" name="message" rows="5" cols="30" placeholder="Type your inquiry here..."></textarea><br>
 
-        <button type="submit">Send</button>
+        <button type="submit">Send Message</button>
       </fieldset>
     </form>
   </main>
 
   <footer>
     <p>Keyboard accessible form with screen-reader friendly labels.</p>
+    <p>
+      <a href="index.html">Back to Home</a> | 
+      <a href="cv.html">View CV</a>
+    </p>
   </footer>
 
 </body>
